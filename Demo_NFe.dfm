@@ -1,7 +1,7 @@
 object Demo_NFe_Form: TDemo_NFe_Form
-  Left = 444
-  Top = 233
-  Width = 1179
+  Left = 564
+  Top = 272
+  Width = 1149
   Height = 654
   Caption = 'Demonstra'#231#227'o NFe - TecnoSpeed'
   Color = clBtnFace
@@ -14,6 +14,13 @@ object Demo_NFe_Form: TDemo_NFe_Form
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
+  object Label2: TLabel
+    Left = 400
+    Top = 16
+    Width = 32
+    Height = 13
+    Caption = 'Label2'
+  end
   object pgcNFe: TPageControl
     Left = 8
     Top = 8
@@ -27,12 +34,38 @@ object Demo_NFe_Form: TDemo_NFe_Form
         Left = 0
         Top = 32
         Width = 425
-        Height = 145
+        Height = 185
         Caption = 'Informa'#231#245'es Ini'
         TabOrder = 1
+        object Label1: TLabel
+          Left = 8
+          Top = 16
+          Width = 115
+          Height = 13
+          Caption = 'CNPJ SoftwarHouse'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object Label3: TLabel
+          Left = 152
+          Top = 16
+          Width = 127
+          Height = 13
+          Caption = 'Token SoftwareHouse'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
         object edtUF: TLabeledEdit
           Left = 8
-          Top = 40
+          Top = 72
           Width = 41
           Height = 21
           EditLabel.Width = 17
@@ -48,7 +81,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
         end
         object edtCNPJ: TLabeledEdit
           Left = 56
-          Top = 40
+          Top = 72
           Width = 97
           Height = 21
           EditLabel.Width = 32
@@ -64,7 +97,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
         end
         object edtID: TLabeledEdit
           Left = 160
-          Top = 40
+          Top = 72
           Width = 257
           Height = 21
           EditLabel.Width = 45
@@ -80,7 +113,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
         end
         object edtNumRec: TLabeledEdit
           Left = 8
-          Top = 80
+          Top = 112
           Width = 409
           Height = 21
           EditLabel.Width = 59
@@ -96,7 +129,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
         end
         object edtNumProt: TLabeledEdit
           Left = 8
-          Top = 120
+          Top = 152
           Width = 409
           Height = 21
           EditLabel.Width = 73
@@ -110,6 +143,26 @@ object Demo_NFe_Form: TDemo_NFe_Form
           EditLabel.ParentFont = False
           TabOrder = 4
         end
+        object edCnpjSh: TEdit
+          Left = 8
+          Top = 32
+          Width = 137
+          Height = 21
+          TabOrder = 5
+        end
+        object edTokenSh: TEdit
+          Left = 152
+          Top = 32
+          Width = 265
+          Height = 21
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 6
+        end
       end
       object cbCertificado: TComboBox
         Left = 0
@@ -122,7 +175,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnConfig: TButton
         Left = 8
-        Top = 216
+        Top = 256
         Width = 129
         Height = 25
         Caption = 'Configurar INI'
@@ -137,7 +190,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnEnviarNfe: TButton
         Left = 144
-        Top = 184
+        Top = 224
         Width = 129
         Height = 25
         Caption = ' Enviar NF-e'
@@ -152,7 +205,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object gbImpressao: TGroupBox
         Left = 280
-        Top = 184
+        Top = 224
         Width = 145
         Height = 257
         Caption = 'Impress'#227'o'
@@ -280,7 +333,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnStatus: TButton
         Left = 8
-        Top = 248
+        Top = 288
         Width = 129
         Height = 25
         Caption = 'Verificar Status'
@@ -295,7 +348,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnEnviarSinc: TButton
         Left = 144
-        Top = 216
+        Top = 256
         Width = 129
         Height = 25
         Caption = 'Enviar S'#237'ncrono'
@@ -310,7 +363,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnGerarDS: TButton
         Left = 8
-        Top = 280
+        Top = 320
         Width = 129
         Height = 25
         Caption = 'Gerar XML DataSet'
@@ -325,7 +378,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnConsultRec: TButton
         Left = 144
-        Top = 248
+        Top = 288
         Width = 129
         Height = 25
         Caption = 'Consultar Recibo'
@@ -340,7 +393,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnAssinar: TButton
         Left = 7
-        Top = 376
+        Top = 416
         Width = 129
         Height = 25
         Caption = 'Assinar XML'
@@ -355,7 +408,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnConsultNfe: TButton
         Left = 143
-        Top = 280
+        Top = 320
         Width = 129
         Height = 25
         Caption = 'Consultar NF-e'
@@ -370,7 +423,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnInutilizarNfe: TButton
         Left = 143
-        Top = 312
+        Top = 352
         Width = 129
         Height = 25
         Caption = 'Inutilizar NF-e'
@@ -385,7 +438,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnConsultaCadastro: TButton
         Left = 143
-        Top = 376
+        Top = 416
         Width = 129
         Height = 25
         Caption = 'Consultar Cadastro'
@@ -400,7 +453,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnLoadConfig: TButton
         Left = 8
-        Top = 184
+        Top = 224
         Width = 129
         Height = 25
         Caption = 'Load Config'
@@ -415,7 +468,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnEventos: TButton
         Left = 144
-        Top = 407
+        Top = 447
         Width = 129
         Height = 25
         Caption = 'Eventos'
@@ -430,7 +483,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnConvertXmlDataset: TButton
         Left = 143
-        Top = 344
+        Top = 384
         Width = 129
         Height = 25
         Caption = 'Converter XML DS'
@@ -445,7 +498,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnAuditar: TButton
         Left = 7
-        Top = 407
+        Top = 447
         Width = 129
         Height = 25
         Caption = 'Auditar XML'
@@ -460,7 +513,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnGerarREC: TButton
         Left = 8
-        Top = 344
+        Top = 384
         Width = 129
         Height = 25
         Caption = 'Gerar Via REC'
@@ -475,7 +528,7 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object btnGeraXMLTX2: TButton
         Left = 8
-        Top = 312
+        Top = 352
         Width = 129
         Height = 25
         Caption = 'Gerar XML TX2 4.00'
@@ -490,16 +543,16 @@ object Demo_NFe_Form: TDemo_NFe_Form
       end
       object GroupBox2: TGroupBox
         Left = 8
-        Top = 440
+        Top = 488
         Width = 417
-        Height = 129
+        Height = 81
         Caption = 'XML Auditado'
         TabOrder = 19
         object mmAudicao: TMemo
           Left = 2
           Top = 15
           Width = 413
-          Height = 112
+          Height = 64
           Align = alClient
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
@@ -550,17 +603,21 @@ object Demo_NFe_Form: TDemo_NFe_Form
     DanfeSettings.ImprimirObsCont = False
     DanfeSettings.ImprimirFrenteVerso = fvDesabilitado
     DanfeSettings.ImprimirLocalRetiradaEntrega = True
-    Versao = '11.1.60.6112'
+    Versao = '11.1.62.6222'
     CaracteresRemoverAcentos = #225#233#237#243#250#224#232#236#242#249#226#234#238#244#251#228#235#239#246#252#227#245#241#231#193#201#205#211#218#192#200#204#210#217#194#202#206#212#219#196#203#207#214#220#195#213#209#199#186#170
     TipoCertificado = ckMemory
-    DiretorioTemplates = 'C:\Program Files (x86)\Borland\Delphi7\Bin\Templatesvm50\'
+    DiretorioTemplates = 
+      'C:\Program Files (x86)\Borland\Delphi7\Bin\Templatesvm50vm50vm50' +
+      'vm50vm50\'
     IgnoreInvalidCertificates = False
     DiretorioLog = 'Log\'
     Ambiente = akHomologacao
     EmailSettings.Autenticacao = False
     EmailSettings.TimeOut = 0
     EmailSettings.ConteudoHtml = False
-    DiretorioEsquemas = 'C:\Program Files (x86)\Borland\Delphi7\Bin\Esquemasvm50\'
+    DiretorioEsquemas = 
+      'C:\Program Files (x86)\Borland\Delphi7\Bin\Esquemasvm50vm50vm50v' +
+      'm50vm50\'
     ConexaoSegura = False
     TimeOut = 0
     DiretorioLogErro = 'C:\Program Files (x86)\Borland\Delphi7\Bin\LogErro\'

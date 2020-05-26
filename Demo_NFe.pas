@@ -51,6 +51,11 @@ type
     mmAudicao: TMemo;
     btEmailArquivo: TButton;
     Button1: TButton;
+    edCnpjSh: TEdit;
+    edTokenSh: TEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
     procedure cbCertificadoChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btnConfigClick(Sender: TObject);
@@ -114,8 +119,6 @@ begin
   vIni := TIniFile.Create(ExtractFilePath(ParamStr(0))+ 'nfeconfig.ini');
 
   spdNFe.AtualizarArquivoServidores := False;
-  spdNFe.ConfigurarSoftwareHouse(vIni.ReadString('NFE', 'CNPJ',''));
-  spdNFe.LoadConfig();
   spdNFe.ListarCertificados(cbCertificado.Items);
 end;
 //-----------------------------------------------------------------------------
@@ -430,6 +433,10 @@ begin//
   edtUF.Text          := spdNFe.UF;
   cbCertificado.Text  := spdNFe.NomeCertificado.Text;
   edtCNPJ.Text        := spdNFe.CNPJ;
+  edCnpjSh.Text       := vIni.ReadString('NFE', 'cnpjSh','');
+  edTokenSh.Text       := vIni.ReadString('NFE', 'tokenSh','');
+  spdNFe.ConfigurarSoftwareHouse(edCnpjSh.Text,edTokenSh.Text);//xxx
+
 
   spdNFe.MaxSizeLoteEnvio := 500;
 
